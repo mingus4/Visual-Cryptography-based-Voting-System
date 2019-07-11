@@ -88,7 +88,7 @@ class crypto:
         SMTP_SERVER = 'smtp.gmail.com'
         SMTP_PORT = 587
         content = MIMEMultipart()
-        content['From'] = 'VisualCrypto3@gmail.com'
+        content['From'] = 'CREATE_AN_EMAIL@gmail.com'
         content['To'] = email_addr
         content['Subject'] = 'Password First Picture'
         content.attach(MIMEText('Here is the first picture of the password:'
@@ -106,10 +106,11 @@ class crypto:
         content = content.as_string()
         mail = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         mail.starttls()
-        mail.login('VisualCrypto3@gmail.com', 'VISUALCRYPTO')
+        mail.login('CREATE_AN_EMAIL@gmail.com', 'YOUR CREATED EMAIL"S PASSWORD')
 
-        # ive been created this email : VisualCrypto3@gmail.com, VISUALCRYPTO
+        # To run the project you have to create an email (or use an existing one)
+        # The email will send the out2.jpg file to the client
         try:
-            mail.sendmail('VisualCrypto3@gmail.com', [email_addr], content)
+            mail.sendmail('CREATE_AN_EMAIL@gmail.com', [email_addr], content)
         except:
             print ("Unexpected Client Error 1.")
