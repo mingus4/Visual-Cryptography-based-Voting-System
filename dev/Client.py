@@ -49,12 +49,6 @@ def email_check(root):
         pass
 
     match = re.match(r'([\w\.-]+)@([\w\.-]+)(\.[\w\.]+)', email_addr)
-    # \w	Returns a match where the string contains any word characters
-    #  +    Matches 1 or more occurrence of preceding expression.
-    # []    Set of characters that you wish to match. 
-    # ()    Group together the expressions contained inside them.
-    #  \    Remove the special meaning of a character ('.' in our case).
-    #  +    Matches one or more times.
     root.lbl1 = Label(root, text="The program checks email address's validation. Please wait.", width=200)
     root.lbl1.pack(padx=40)
     root.update()
