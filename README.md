@@ -1,4 +1,4 @@
-# Online-Voting-System
+# Visual-Cryptography-based-Voting-System
 
 Online python tkinter based voting system with visual cryptography.
 
